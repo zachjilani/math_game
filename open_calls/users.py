@@ -10,3 +10,6 @@ class Player:
 
   def save_player():
     return True
+
+  def delete_player():
+    return True
