@@ -1,9 +1,8 @@
 import yaml
 from flask import request, g
 from flask_json import FlaskJSON, JsonError, json_response, as_json
-
+from users import Player
 from tools.logging import logger
-
 import random
 import json
 
@@ -39,4 +38,5 @@ def handle_request():
                      body=response,
                      from_=yml_configs['twillio']['phone_number'],
                      to=request.form['From'])
+    print(message)
     return json_response( status = "ok" )
