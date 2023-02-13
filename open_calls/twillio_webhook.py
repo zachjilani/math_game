@@ -1,7 +1,6 @@
 import yaml
 from flask import request, g
 from flask_json import FlaskJSON, JsonError, json_response, as_json
-from users import Player
 from tools.logging import logger
 import random
 import json
