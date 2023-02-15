@@ -42,3 +42,19 @@
 		}
 	]
 }
+
+{
+	"Level 4" :[ 
+		{
+
+		"Solve for x: |x - 3| + 4 = 7" : "x = 6, x = 0",
+		"Solve for x: x^2 - 6x + 9 = 16" : "x = -1, x = 7",
+		"Find the domain of f(x) = 1 / (x^2 - 4)" : "(-infinity, -2) U (-2, 2) U (2, infinity)",
+		"Find the inverse of f(x) = 2x + 3" : "f^(-1)(x) = (x-3)/2"
+
+	}
+
+	]	
+
+
+}
