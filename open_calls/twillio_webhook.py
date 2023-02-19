@@ -6,7 +6,7 @@ from os.path import exists
 import random
 import json
 import pickle
-from player import Player
+from users.player import Player
 
 yml_configs = {}
 BODY_MSGS = []

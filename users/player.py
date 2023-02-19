@@ -6,7 +6,7 @@ with open('Questions.json', 'r') as myfile:
 
 
 class Player:
-  def __init__(self, number, score):
+  def __init__(self, number, score=0):
     self.number = number
     self.score = score
     self.questions_asked = []
