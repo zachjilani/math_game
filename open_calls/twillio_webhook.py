@@ -37,9 +37,12 @@ def handle_request():
         with open('chatbot_corpus.json', 'w') as myfile:
             myfile.write(json.dumps(CORPUS, indent=4 ))
 
+
     message = g.sms_client.messages.create(
                      from_=yml_configs['twillio']['phone_number'],
+                     body=response,
                      to=request.form['From'])
+    print(message)
 
     with open(f"users/{request.form['From']}.pkl", 'wb') as p:
         pickle.dump(player, p)
