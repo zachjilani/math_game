@@ -15,7 +15,7 @@ with open('config.yml', 'r') as yml_file:
 
 CORPUS = {}
 
-with open('Questions.json', 'r') as myfile:
+with open('chatbot_corpus.json', 'r') as myfile:
     CORPUS = json.loads(myfile.read())
 
 def handle_request():
