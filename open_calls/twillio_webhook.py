@@ -2,8 +2,11 @@ import yaml
 from flask import request, g
 from flask_json import FlaskJSON, JsonError, json_response, as_json
 from tools.logging import logger
+from os.path import exists
 import random
 import json
+import pickle
+from player import Player
 
 yml_configs = {}
 BODY_MSGS = []
@@ -12,13 +15,19 @@ with open('config.yml', 'r') as yml_file:
 
 CORPUS = {}
 
-with open('chatbot_corpus.json', 'r') as myfile:
+with open('Questions.json', 'r') as myfile:
     CORPUS = json.loads(myfile.read())
 
 def handle_request():
     logger.debug(request.form)
 
-    response = 'NOT FOUND'
+    player = None
+    #look if number for player exists
+    if exists(f"users/{request.form['From']}.pkl"):
+        with open(f"users/{request.form['From']}.pkl", 'rb') as p:
+            player = pickle.load(p)
+    else:
+        player = Player(request.form['From'])
 
     sent_input = str(request.form['Body']).lower()
     if sent_input in CORPUS['input']:
@@ -28,11 +37,11 @@ def handle_request():
         with open('chatbot_corpus.json', 'w') as myfile:
             myfile.write(json.dumps(CORPUS, indent=4 ))
 
-    logger.debug(response)
-
     message = g.sms_client.messages.create(
-                     body=response,
                      from_=yml_configs['twillio']['phone_number'],
                      to=request.form['From'])
-    print(message)
+
+    with open(f"users/{request.form['From']}.pkl", 'wb') as p:
+        pickle.dump(player, p)
+
     return json_response( status = "ok" )
