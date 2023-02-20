@@ -43,7 +43,7 @@ def handle_request():
                      from_=yml_configs['twillio']['phone_number'],
                      body=response,
                      to=request.form['From'])
-    # print(message)
+    print(message)
     print(player.exists())
     print(player.questions())
     print(player.number())
