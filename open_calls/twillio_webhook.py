@@ -8,6 +8,7 @@ import json
 import pickle
 from users.player import Player
 
+response = 'space'
 yml_configs = {}
 BODY_MSGS = []
 with open('config.yml', 'r') as yml_file:
