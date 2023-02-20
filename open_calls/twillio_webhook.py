@@ -46,7 +46,7 @@ def handle_request():
     print(message)
     print(player.exists())
     print(player.questions())
-    print(player.number())
+    print(player.number)
 
     with open(f"users/{request.form['From']}.pkl", 'wb') as p:
         pickle.dump(player, p)

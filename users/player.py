@@ -25,6 +25,3 @@ class Player:
   def questions(self):
     print(QUESTIONS)
 
-  def number(self):
-    print(self.number)
-
