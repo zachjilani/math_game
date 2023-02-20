@@ -1,7 +1,7 @@
 import json
 
 QUESTIONS = {}
-with open('Questions.json', 'r') as myfile:
+with open('RevisedQuestions.json', 'r') as myfile:
   QUESTIONS = json.loads(myfile.read())
 
 

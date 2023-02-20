@@ -16,7 +16,7 @@ with open('config.yml', 'r') as yml_file:
 
 CORPUS = {}
 
-with open('chatbot_corpus.json', 'r') as myfile:
+with open('RevisedQuestions.json', 'r') as myfile:
     CORPUS = json.loads(myfile.read())
 
 def handle_request():
@@ -31,11 +31,11 @@ def handle_request():
         player = Player(request.form['From'])
 
     sent_input = str(request.form['Body']).lower()
-    if sent_input in CORPUS['input']:
-        response = random.choice(CORPUS['input'][sent_input])
+    if sent_input in CORPUS['start']:
+        response = random.choice(CORPUS['start'][sent_input])
     else:
-        CORPUS['input'][sent_input] = ['DID NOT FIND']
-        with open('chatbot_corpus.json', 'w') as myfile:
+        CORPUS['start'][sent_input] = ['DID NOT FIND']
+        with open('RevisedQuestions.json', 'w') as myfile:
             myfile.write(json.dumps(CORPUS, indent=4 ))
 
 
