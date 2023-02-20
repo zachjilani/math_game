@@ -12,10 +12,6 @@ class Player:
     self.questions_asked = []
 
 
-  def load_questions():
-    return True
-
-
   def save_player(self, question):
     self.questions_asked.append(question)
 
