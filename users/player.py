@@ -19,3 +19,12 @@ class Player:
   def save_player(self, question):
     self.questions_asked.append(question)
 
+  def exists(self):
+    print("player object exists")
+
+  def questions(self):
+    print(QUESTIONS)
+
+  def number(self):
+    print(self.number)
+
