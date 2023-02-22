@@ -9,6 +9,7 @@ class Player:
   def __init__(self, number, score=0):
     self.number = number
     self.score = score
+    self.state = "start"
     self.questions_asked = []
 
 
