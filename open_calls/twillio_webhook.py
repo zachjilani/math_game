@@ -31,10 +31,11 @@ def handle_request():
         player = Player(request.form['From'])
 
     sent_input = str(request.form['Body']).lower()
-    if sent_input in CORPUS['init']:
-        response = random.choice(CORPUS['start'][sent_input])
+
+    if sent_input == 'start':
+        response = CORPUS[sent_input]['content']
     else:
-        CORPUS['init'][sent_input] = ['DID NOT FIND']
+        sent_input = 'end'
         with open('RevisedQuestions.json', 'w') as myfile:
             myfile.write(json.dumps(CORPUS, indent=4 ))
 
