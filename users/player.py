@@ -24,10 +24,10 @@ class Player:
         if 'point' in next_question['point']:
           self.score += next_question['point']
           out.append(self.score)
-    while True:
-      out.append(QUESTIONS[state]['content'])
-      if 'next_state' not in QUESTIONS[state]:
-        break
-      state = QUESTIONS[state]['next_state']
+    # while True:
+    #   out.append(QUESTIONS[state]['content'])
+    #   if 'next_state' not in QUESTIONS[state]:
+    #     break
+    #   state = QUESTIONS[state]['next_state']
 
     return out
