@@ -14,12 +14,8 @@ BODY_MSGS = []
 with open('config.yml', 'r') as yml_file:
     yml_configs = yaml.safe_load(yml_file)
 
-CORPUS = {}
-
-with open('RevisedQuestions.json', 'r') as myfile:
-    CORPUS = json.loads(myfile.read())
-
 def handle_request():
+    print(request.form())
 
     player = None
     #look if number for player exists
@@ -36,23 +32,6 @@ def handle_request():
             to = request.form["From"]
 				)
         print(message)
-
-    # sent_input = str(request.form['Body']).lower()
-
-    # if sent_input == 'start':
-    #     response = CORPUS[sent_input]['content']
-    # else:
-    #     sent_input = 'end'
-    #     with open('RevisedQuestions.json', 'w') as myfile:
-    #         myfile.write(json.dumps(CORPUS, indent=4 ))
-
-
-
-    # message = g.sms_client.messages.create(
-    #                  from_=yml_configs['twillio']['phone_number'],
-    #                  body=response,
-    #                  to=request.form['From'])
-    #print(message)
 
     with open(f"users/{request.form['From']}.pkl", 'wb') as p:
         pickle.dump(player, p)
