@@ -18,16 +18,18 @@ class Player:
   def questions(self, input):
     state = 'start'
     out = []
-    for next_question in QUESTIONS[state]['next_state']:
+    for next_question in QUESTIONS[state]['next_question']:
       if input.lower() == next_question['input'].lower():
-        state = next_question['next_state']
+        state = next_question['next_question']
         if 'point' in next_question['point']:
           self.score += next_question['point']
           out.append(self.score)
+          break
+
     # while True:
     #   out.append(QUESTIONS[state]['content'])
     #   if 'next_state' not in QUESTIONS[state]:
     #     break
-    #   state = QUESTIONS[state]['next_state']
+    #   state = QUESTIONS[state]['next_question']
 
     return out

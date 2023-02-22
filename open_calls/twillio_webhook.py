@@ -35,6 +35,7 @@ def handle_request():
             from_ = yml_configs['twillio']['phone_number'],
             to = request.form["From"]
 				)
+        print(message)
 
     # sent_input = str(request.form['Body']).lower()
 
@@ -51,7 +52,7 @@ def handle_request():
     #                  from_=yml_configs['twillio']['phone_number'],
     #                  body=response,
     #                  to=request.form['From'])
-    # print(message)
+    #print(message)
 
     with open(f"users/{request.form['From']}.pkl", 'wb') as p:
         pickle.dump(player, p)

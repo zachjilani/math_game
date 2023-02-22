@@ -1,17 +1,12 @@
 {
 		"start":{
 			"content": "3 + x = 5",
-			"next_state": [
+			"next_question":
 				{
 					"input": "x = 2",
-					"next_state": "Q2",
+					"next_question": "Q2",
 					"point": "1"
-				},
-				{
-					"input": "wrong",
-					"next_state": "end"
 				}
-			]
 		},
 
 		"Q2":{
@@ -19,7 +14,7 @@
 			"next_question" :
 			{
 				"input" : "x = 6",
-				"next question" : "Q3",
+				"next_question" : "Q3",
 					"point" : 1
 				}
 		},
@@ -29,7 +24,7 @@
 			"next_question" :
 				{
 					"input" : "x = 15",
-					"next question" : "Q4",
+					"next_question" : "Q4",
 					"point" : 1
 				}
 		},
@@ -39,7 +34,7 @@
 			"next_question" :
 				{
 					"input" : "x= 15",
-					"next question" : "Q5",
+					"next_question" : "Q5",
 					"point" : 1
 				}
 		},
@@ -49,7 +44,7 @@
 			"next_question" :
 			{
 				"input" : "x = 3",
-				"next question" : "Q6",
+				"next_question" : "Q6",
 					"point" : 1
 				}
 		},
@@ -59,7 +54,7 @@
 			"next_question" :
 			{
 				"input" : "x = 4",
-				"next question" : "Q7",
+				"next_question" : "Q7",
 					"point" : 1
 				}
 		},
@@ -69,7 +64,7 @@
 			"next_question" :
 			{
 				"input" : "x = 0",
-				"next question" : "Q8",
+				"next_question" : "Q8",
 					"point" : 1
 				}
 		},
@@ -79,7 +74,7 @@
 			"next_question" :
 			{
 				"input" : "x = 3",
-				"next question" : "Q9",
+				"next_question" : "Q9",
 					"point" : 1
 				}
 		},
@@ -89,7 +84,7 @@
 			"next_question" :
 			{
 				"input" :"x = 5",
-				"next question" : "Q10",
+				"next_question" : "Q10",
 					"point" : 1
 				}
 		},
@@ -99,37 +94,37 @@
 			"next_question" :
 			{
 				"input" : "x = 1",
-				"next question" : "Q11",
+				"next_question" : "Q11",
 					"point" : 1
 				}
 		},
 
 		"Q11":{
 			"content" :"Combine like terms: X^2 + 3x^2 +2x + 5x",
-			"next-question" :
+			"next_question" :
 			{
 				"input" : "4x^2 + 7x",
-				"next question" : "Q12",
+				"next_question" : "Q12",
 					"point" : 1
 				}
 		},
 
 		"Q12":{
 			"content" :"Combine like terms: X+4x+2y+13y",
-			"next-question" :
+			"next_question" :
 			{
 				"input" : "5x + 15y",
-				"next question" : "Q13",
+				"next_question" : "Q13",
 					"point" : 1
 				}
 		},
 
 		"Q13":{
 			"content" : "Combine like terms: X^3 + 3x + 4",
-			"next-question" :
+			"next_question" :
 			{
 				"input" : "X^3 + 3x + 4",
-				"next question" : "Q14",
+				"next_question" : "Q14",
 					"point" : 1
 				}
 		},
@@ -139,7 +134,7 @@
 			"next_question" :
 			{
 				"input" : "3x+2x",
-				"next question" : "Q15",
+				"next_question" : "Q15",
 					"point" : 1
 				}
 		},
@@ -149,7 +144,7 @@
 			"next_question" :
 			{
 				"input" : "X^2 + 3x^3",
-				"next question" : "Q16",
+				"next_question" : "Q16",
 					"point" : 1
 				}
 		},
@@ -159,17 +154,17 @@
 			"next_question" :
 			{
 				"input" : "X^2 + 5x + 6",
-				"next question" : "Q17",
+				"next_question" : "Q17",
 					"point" : 1
 				}
 		},
 
 		"Q17":{
 			"content" :"3x + 4y = 10, x = 2",
-			"next-question" :
+			"next_question" :
 			{
 				"input" : "y = 1",
-				"next question" : "Q18",
+				"next_question" : "Q18",
 					"point" : 1
 				}
 		},
@@ -179,7 +174,7 @@
 			"next_question":
 			{
 				"input": "y = 3",
-				"next question" : "Q19",
+				"next_question" : "Q19",
 					"point" : 1
 				}
 		},
@@ -189,7 +184,7 @@
 			"next_question" :
 			{
 				"input" : "x=15, y =2",
-				"next question" : "Q20",
+				"next_question" : "Q20",
 					"point" : 1
 				}
 		},
@@ -199,7 +194,7 @@
 			"next_questions" :
 			{
 				"input" : "x = 3, y =4",
-				"next question" : "Q21",
+				"next_question" : "Q21",
 					"point" : 1
 				}
 		},
@@ -209,7 +204,7 @@
 			"next_question" :
 			{
 				"input" : "x = 3, y =2",
-				"next question" : "Q22",
+				"next_question" : "Q22",
 					"point" : 1
 				}
 		},
@@ -219,7 +214,7 @@
 			"next_question" :
 			{
 				"input": "x = 2, y = 3",
-				"next question" : "Q23",
+				"next_question" : "Q23",
 					"point" : 1
 				}
 		},
@@ -229,17 +224,18 @@
 			"next_question" :
 			{
 				"input" : "x = 1 , y = 2",
-				"next question" : "Q24",
+				"next_question" : "Q24",
 					"point" : 1
 				}
 		},
 
 		"Q24":{
 			"content" : "3x - 4y - 1= -6",
-			"next-question" :
+			"next_question" :
 			{
-				"input": "x = 3 ; y =4","next question" : "Q25",
-					"point" : 1
+				"input": "x = 3 ; y =4",
+				"next_question" : "Q25",
+				"point" : 1
 				}
 		},
 
@@ -248,7 +244,7 @@
 			"next_question" :
 			{
 				"input" : "x=4, y = 9",
-				"next question" : "end",
+				"next_question" : "end",
 					"point" : 1
 				}
 		},
