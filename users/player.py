@@ -16,12 +16,9 @@ class Player:
   def save_player(self, question):
     self.questions_asked.append(question)
 
-  def exists(self):
-    print("player object exists")
-
   def questions(self, input):
     out = []
-    for next_question in QUESTIONS[self.state]['next_state']:
+    for next_question in QUESTIONS['start']['next_state']:
       if input.lower() == next_question['input'].lower():
         self.state = next_question['next_state']
         if 'point' in next_question['point']:
