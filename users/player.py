@@ -18,6 +18,18 @@ class Player:
   def exists(self):
     print("player object exists")
 
-  def questions(self):
-    print(QUESTIONS)
+  def questions(self, input):
+    out = []
+    for next_question in QUESTIONS[self.state]['next_state']:
+      if input.lower() == next_question['input'].lower():
+        self.state = next_question['next_state']
+        if 'point' in next_question['point']:
+          self.score += next_question['point']
+          out.append(self.score)
+    while True:
+      out.append(QUESTIONS[self.state]['content'])
+      if 'next_state' not in QUESTIONS[self.state]:
+        break
+      self.state = QUESTIONS[self.state]['next_state']
 
+    return out

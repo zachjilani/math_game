@@ -20,7 +20,6 @@ with open('RevisedQuestions.json', 'r') as myfile:
     CORPUS = json.loads(myfile.read())
 
 def handle_request():
-    logger.debug(request.form)
 
     player = None
     #look if number for player exists
@@ -29,22 +28,30 @@ def handle_request():
             player = pickle.load(p)
     else:
         player = Player(request.form['From'])
+    output = player.questions(request.form['Body'])
+    for msg in output:
+        message = g.sms_client_messages.create(
+            body = msg,
+            from_ = yml_configs['twillio']['phone_number'],
+            to = request.form["From"]
+				)
 
-    sent_input = str(request.form['Body']).lower()
+    # sent_input = str(request.form['Body']).lower()
 
-    if sent_input == 'start':
-        response = CORPUS[sent_input]['content']
-    else:
-        sent_input = 'end'
-        with open('RevisedQuestions.json', 'w') as myfile:
-            myfile.write(json.dumps(CORPUS, indent=4 ))
+    # if sent_input == 'start':
+    #     response = CORPUS[sent_input]['content']
+    # else:
+    #     sent_input = 'end'
+    #     with open('RevisedQuestions.json', 'w') as myfile:
+    #         myfile.write(json.dumps(CORPUS, indent=4 ))
 
 
-    message = g.sms_client.messages.create(
-                     from_=yml_configs['twillio']['phone_number'],
-                     body=response,
-                     to=request.form['From'])
-    print(message)
+
+    # message = g.sms_client.messages.create(
+    #                  from_=yml_configs['twillio']['phone_number'],
+    #                  body=response,
+    #                  to=request.form['From'])
+    # print(message)
 
     with open(f"users/{request.form['From']}.pkl", 'wb') as p:
         pickle.dump(player, p)
