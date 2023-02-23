@@ -1,255 +1,281 @@
 {
-		"start":{
-			"content": "3 + x = 5",
-			"next_question":
-				{
-					"input": "x = 2",
-					"next_question": "Q2",
-					"point": "1"
-				}
-		},
-
-		"Q2":{
-			"content" :"15 - x = 9",
-			"next_question" :
-			{
-				"input" : "x = 6",
-				"next_question" : "Q3",
-					"point" : 1
-				}
-		},
-
-		"Q3":{
-			"content" :	"3x + 5 = 50",
-			"next_question" :
-				{
-					"input" : "x = 15",
-					"next_question" : "Q4",
-					"point" : 1
-				}
-		},
-
-		"Q4":{
-			"content" : "3x + 13 - 8 = 20",
-			"next_question" :
-				{
-					"input" : "x= 15",
-					"next_question" : "Q5",
-					"point" : 1
-				}
-		},
-
-		"Q5":{
-			"content" : "2x + 3x + 4 = 19",
-			"next_question" :
-			{
-				"input" : "x = 3",
-				"next_question" : "Q6",
-					"point" : 1
-				}
-		},
-
-		"Q6":{
-			"content" :"X^2 + 4= 20",
-			"next_question" :
-			{
-				"input" : "x = 4",
-				"next_question" : "Q7",
-					"point" : 1
-				}
-		},
-
-		"Q7":{
-			"content" :"13^x + 3x + 5 + 11 = 24",
-			"next_question" :
-			{
-				"input" : "x = 0",
-				"next_question" : "Q8",
-					"point" : 1
-				}
-		},
-
-		"Q8":{
-			"content" :"x + x^3 + 2x = 36",
-			"next_question" :
-			{
-				"input" : "x = 3",
-				"next_question" : "Q9",
-					"point" : 1
-				}
-		},
-
-		"Q9":{
-			"content" :"x + 20 - 4x + 2x^2 = 55",
-			"next_question" :
-			{
-				"input" :"x = 5",
-				"next_question" : "Q10",
-					"point" : 1
-				}
-		},
-
-		"Q10":{
-			"content" : "13x + 4 - x^3 = 16",
-			"next_question" :
-			{
-				"input" : "x = 1",
-				"next_question" : "Q11",
-					"point" : 1
-				}
-		},
-
-		"Q11":{
-			"content" :"Combine like terms: X^2 + 3x^2 +2x + 5x",
-			"next_question" :
-			{
-				"input" : "4x^2 + 7x",
-				"next_question" : "Q12",
-					"point" : 1
-				}
-		},
-
-		"Q12":{
-			"content" :"Combine like terms: X+4x+2y+13y",
-			"next_question" :
-			{
-				"input" : "5x + 15y",
-				"next_question" : "Q13",
-					"point" : 1
-				}
-		},
-
-		"Q13":{
-			"content" : "Combine like terms: X^3 + 3x + 4",
-			"next_question" :
-			{
-				"input" : "X^3 + 3x + 4",
-				"next_question" : "Q14",
-					"point" : 1
-				}
-		},
-
-		"Q14":{
-			"content" : "Distribute: X(3+2)",
-			"next_question" :
-			{
-				"input" : "3x+2x",
-				"next_question" : "Q15",
-					"point" : 1
-				}
-		},
-
-		"Q15":{
-			"content" : "Distribute: X(x+3x^2)",
-			"next_question" :
-			{
-				"input" : "X^2 + 3x^3",
-				"next_question" : "Q16",
-					"point" : 1
-				}
-		},
-
-		"Q16":{
-			"content" : "Distribute: (X+2)(x+3)",
-			"next_question" :
-			{
-				"input" : "X^2 + 5x + 6",
-				"next_question" : "Q17",
-					"point" : 1
-				}
-		},
-
-		"Q17":{
-			"content" :"3x + 4y = 10, x = 2",
-			"next_question" :
-			{
-				"input" : "y = 1",
-				"next_question" : "Q18",
-					"point" : 1
-				}
-		},
-
-		"Q18":{
-			"content" :"3x^2 + y = 30, x=3",
-			"next_question":
-			{
-				"input": "y = 3",
-				"next_question" : "Q19",
-					"point" : 1
-				}
-		},
-
-		"Q19":{
-			"content" : "3x+5^y = 70",
-			"next_question" :
-			{
-				"input" : "x=15, y =2",
-				"next_question" : "Q20",
-					"point" : 1
-				}
-		},
-
-		"Q20":{
-			"content" : "3^x + 2^y = 43",
-			"next_questions" :
-			{
-				"input" : "x = 3, y =4",
-				"next_question" : "Q21",
-					"point" : 1
-				}
-		},
-
-		"Q21":{
-			"content" : "(X+y)(x-y) = 25",
-			"next_question" :
-			{
-				"input" : "x = 3, y =2",
-				"next_question" : "Q22",
-					"point" : 1
-				}
-		},
-
-		"Q22":{
-			"content" : "X^2 - 3y + 3x = 1",
-			"next_question" :
-			{
-				"input": "x = 2, y = 3",
-				"next_question" : "Q23",
-					"point" : 1
-				}
-		},
-
-		"Q23":{
-			"content" : "X^2 + y^2 + z = 10 when z = 5",
-			"next_question" :
-			{
-				"input" : "x = 1 , y = 2",
-				"next_question" : "Q24",
-					"point" : 1
-				}
-		},
-
-		"Q24":{
-			"content" : "3x - 4y - 1= -6",
-			"next_question" :
-			{
-				"input": "x = 3 ; y =4",
-				"next_question" : "Q25",
-				"point" : 1
-				}
-		},
-
-		"Q25":{
-			"content" :"3x^2 + x^3 - 9y = 31",
-			"next_question" :
-			{
-				"input" : "x=4, y = 9",
-				"next_question" : "end",
-					"point" : 1
-				}
-		},
-
-		"end":{
-			"content" : "Thank you for playing!"
+"start" :{
+	"content": "3 + x = 5",
+	"next_question":[
+		
+		{
+			"input": "x = 2",
+			"next_question": "Q2",
+			"point": "1"
 		}
+	]
+},
+
+"Q2" :{
+	"content" :"15 - x = 9",
+	"next_question" :[
+	{
+		"input" : "x = 6",
+		"next_question" : "Q3",
+			"point" : 1
+		}
+	]
+},
+
+"Q3":{
+	"content" :	"3x + 5 = 50",
+	"next_question" :[
+		{
+			"input" : "x = 15",
+			"next_question" : "Q4",
+			"point" : 1
+		}
+	]
+},
+
+"Q4":{
+	"content" : "3x + 13 - 8 = 20",
+	"next_question" :[ 
+		{
+			"input" : "x= 15",
+			"next_question" : "Q5",
+			"point" : 1
+		}
+	]
+},
+
+"Q5":{
+	"content" : "2x + 3x + 4 = 19",
+	"next_question" :[
+		{
+		"input" : "x = 3",
+		"next_question" : "Q6",
+			"point" : 1
+		}
+	]
+},
+
+"Q6":{
+	"content" :"X^2 + 4= 20",
+	"next_question" :[
+	{
+		"input" : "x = 4",
+		"next_question" : "Q7",
+			"point" : 1
+		}
+	]
+},
+
+"Q7":{
+	"content" :"13^x + 3x + 5 + 11 = 24",
+	"next_question" :[ 
+	{
+		"input" : "x = 0",
+		"next_question" : "Q8",
+			"point" : 1
+		}
+	]
+},
+
+"Q8":{
+	"content" :"x + x^3 + 2x = 36",
+	"next_question" :[ 
+	{
+		"input" : "x = 3",
+		"next_question" : "Q9",
+			"point" : 1
+		}
+	]
+},
+
+"Q9":{
+	"content" :"x + 20 - 4x + 2x^2 = 55",
+	"next_question" :[ 
+	{
+		"input" :"x = 5",
+		"next_question" : "Q10",
+			"point" : 1
+		}
+	]
+},
+
+"Q10":{
+	"content" : "13x + 4 - x^3 = 16",
+	"next_question" :[ 
+	{
+		"input" : "x = 1",
+		"next_question" : "Q11",
+			"point" : 1
+		}
+	]
+},
+
+"Q11":{
+	"content" :"Combine like terms: X^2 + 3x^2 +2x + 5x",
+	"next_question" :[
+	{
+		"input" : "4x^2 + 7x",
+		"next_question" : "Q12",
+			"point" : 1
+		}
+	]
+},
+
+"Q12":{
+	"content" :"Combine like terms: X+4x+2y+13y",
+	"next_question" :[ 
+	{
+		"input" : "5x + 15y",
+		"next_question" : "Q13",
+			"point" : 1
+		}
+	]
+},
+
+"Q13":{
+	"content" : "Combine like terms: X^3 + 3x + 4",
+	"next_question" :[ 
+	{
+		"input" : "X^3 + 3x + 4",
+		"next_question" : "Q14",
+			"point" : 1
+		}
+	]
+},
+
+"Q14":{
+	"content" : "Distribute: X(3+2)",
+	"next_question" :[ 
+	{
+		"input" : "3x+2x",
+		"next_question" : "Q15",
+			"point" : 1
+		}
+	]
+},
+
+"Q15":{
+	"content" : "Distribute: X(x+3x^2)",
+	"next_question" :[ 
+	{
+		"input" : "X^2 + 3x^3",
+		"next_question" : "Q16",
+			"point" : 1
+		}
+	]
+},
+
+"Q16":{
+	"content" : "Distribute: (X+2)(x+3)",
+	"next_question" :[ 
+	{
+		"input" : "X^2 + 5x + 6",
+		"next_question" : "Q17",
+			"point" : 1
+		}
+	]
+},
+
+"Q17":{
+	"content" :"3x + 4y = 10, x = 2",
+	"next_question" :[ 
+	{
+		"input" : "y = 1",
+		"next_question" : "Q18",
+			"point" : 1
+		}
+	]
+},
+
+"Q18":{
+	"content" :"3x^2 + y = 30, x=3",
+	"next_question":[ 
+	{
+		"input": "y = 3",
+		"next_question" : "Q19",
+			"point" : 1
+		}
+	]
+},
+
+"Q19":{
+	"content" : "3x+5^y = 70",
+	"next_question" :[ 
+	{
+		"input" : "x=15, y =2",
+		"next_question" : "Q20",
+			"point" : 1
+		}
+	]
+},
+
+"Q20":{
+	"content" : "3^x + 2^y = 43",
+	"next_questions" :[ 
+	{
+		"input" : "x = 3, y =4",
+		"next_question" : "Q21",
+			"point" : 1
+		}
+	]
+},
+
+"Q21":{
+	"content" : "(X+y)(x-y) = 25",
+	"next_question" :[
+	{
+		"input" : "x = 3, y =2",
+		"next_question" : "Q22",
+			"point" : 1
+		}
+	]
+},
+
+"Q22":{
+	"content" : "X^2 - 3y + 3x = 1",
+	"next_question" :[ 
+	{
+		"input": "x = 2, y = 3",
+		"next_question" : "Q23",
+			"point" : 1
+		}
+	]
+},
+
+"Q23":{
+	"content" : "X^2 + y^2 + z = 10 when z = 5",
+	"next_question" :[ 
+	{
+		"input" : "x = 1 , y = 2",
+		"next_question" : "Q24",
+			"point" : 1
+		}
+	]
+},
+
+"Q24":{
+	"content" : "3x - 4y - 1= -6",
+	"next_question" :[ 
+	{
+		"input": "x = 3 ; y =4",
+		"next_question" : "Q25",
+		"point" : 1
+		}
+	]
+},
+
+"Q25":{
+	"content" :"3x^2 + x^3 - 9y = 31",
+	"next_question" :[ 
+	{
+		"input" : "x=4, y = 9",
+		"next_question" : "end",
+			"point" : 1
+		}
+      ]
+		},
+
+"end":{
+	"content" : "Thank you for playing!"
+}
 }
