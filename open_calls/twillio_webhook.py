@@ -25,7 +25,7 @@ def handle_request():
         player = Player(request.form['From'])
     output = player.questions(request.form['Body'])
     for msg in output:
-        message = g.sms_client_messages.create(
+        message = g.sms_client.messages.create(
             body = msg,
             from_ = yml_configs['twillio']['phone_number'],
             to = request.form["From"]
