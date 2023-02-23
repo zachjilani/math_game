@@ -3,7 +3,7 @@
 	"content": "3 + x = 5",
 	"next_question":[
 		{
-			"input": "x = 2",
+			"input": "x=2",
 			"next_question": "Q2",
 			"point": "1"
 		}
@@ -14,7 +14,7 @@
 	"content" :"15 - x = 9",
 	"next_question" :[
 		{
-			"input" : "x = 6",
+			"input" : "x=6",
 			"next_question" : "Q3",
 			"point" : "1"
 		}
@@ -25,7 +25,7 @@
 	"content" :	"3x + 5 = 50",
 	"next_question" :[
 		{
-			"input" : "x = 15",
+			"input" : "x=15",
 			"next_question" : "Q4",
 			"point" : "1"
 		}
@@ -36,7 +36,7 @@
 	"content" : "3x + 13 - 8 = 20",
 	"next_question" :[
 		{
-			"input" : "x= 15",
+			"input" : "x=15",
 			"next_question" : "Q5",
 			"point" : "1"
 		}
@@ -47,7 +47,7 @@
 	"content" : "2x + 3x + 4 = 19",
 	"next_question" :[
 		{
-		"input" : "x = 3",
+		"input" : "x=3",
 		"next_question" : "Q6",
 			"point" : "1"
 		}
@@ -58,7 +58,7 @@
 	"content" :"X^2 + 4= 20",
 	"next_question" :[
 		{
-			"input" : "x = 4",
+			"input" : "x=4",
 			"next_question" : "Q7",
 			"point" : "1"
 		}
@@ -69,7 +69,7 @@
 	"content" :"13^x + 3x + 5 + 11 = 24",
 	"next_question" :[
 		{
-			"input" : "x = 0",
+			"input" : "x=0",
 			"next_question" : "Q8",
 			"point" : "1"
 		}
@@ -80,7 +80,7 @@
 	"content" :"x + x^3 + 2x = 36",
 	"next_question" :[
 		{
-			"input" : "x = 3",
+			"input" : "x=3",
 			"next_question" : "Q9",
 			"point" : "1"
 		}
@@ -91,7 +91,7 @@
 	"content" :"x + 20 - 4x + 2x^2 = 55",
 	"next_question" :[
 		{
-			"input" :"x = 5",
+			"input" :"x=5",
 			"next_question" : "Q10",
 			"point" : "1"
 		}
@@ -102,7 +102,7 @@
 	"content" : "13x + 4 - x^3 = 16",
 	"next_question" :[
 		{
-			"input" : "x = 1",
+			"input" : "x=1",
 			"next_question" : "Q11",
 			"point" : "1"
 		}
@@ -113,7 +113,7 @@
 	"content" :"Combine like terms: X^2 + 3x^2 +2x + 5x",
 	"next_question" :[
 		{
-			"input" : "4x^2 + 7x",
+			"input" : "4x^2+7x",
 			"next_question" : "Q12",
 			"point" : "1"
 		}
@@ -124,7 +124,7 @@
 	"content" :"Combine like terms: X+4x+2y+13y",
 	"next_question" :[
 		{
-			"input" : "5x + 15y",
+			"input" : "5x+15y",
 			"next_question" : "Q13",
 			"point" : "1"
 		}
@@ -135,7 +135,7 @@
 	"content" : "Combine like terms: X^3 + 3x + 4",
 	"next_question" :[
 		{
-			"input" : "X^3 + 3x + 4",
+			"input" : "X^3+3x+4",
 			"next_question" : "Q14",
 			"point" : "1"
 		}
@@ -157,7 +157,7 @@
 	"content" : "Distribute: X(x+3x^2)",
 	"next_question" :[
 		{
-			"input" : "X^2 + 3x^3",
+			"input" : "X^2+3x^3",
 			"next_question" : "Q16",
 			"point" : "1"
 		}
@@ -168,7 +168,7 @@
 	"content" : "Distribute: (X+2)(x+3)",
 	"next_question" :[
 		{
-			"input" : "X^2 + 5x + 6",
+			"input" : "X^2+5x+6",
 			"next_question" : "Q17",
 			"point" : "1"
 		}
@@ -179,7 +179,7 @@
 	"content" :"3x + 4y = 10, x = 2",
 	"next_question" :[
 		{
-			"input" : "y = 1",
+			"input" : "y=1",
 			"next_question" : "Q18",
 			"point" : "1"
 		}
@@ -190,7 +190,7 @@
 	"content" :"3x^2 + y = 30, x=3",
 	"next_question":[
 		{
-			"input": "y = 3",
+			"input": "y=3",
 			"next_question" : "Q19",
 			"point" : "1"
 		}
@@ -201,7 +201,7 @@
 	"content" : "3x+5^y = 70",
 	"next_question" :[
 		{
-			"input" : "x=15, y =2",
+			"input" : "x=15y=2",
 			"next_question" : "Q20",
 			"point" : "1"
 		}
@@ -212,7 +212,7 @@
 	"content" : "3^x + 2^y = 43",
 	"next_questions" :[
 		{
-			"input" : "x = 3, y =4",
+			"input" : "x=3y=4",
 			"next_question" : "Q21",
 			"point" : "1"
 		}
@@ -223,7 +223,7 @@
 	"content" : "(X+y)(x-y) = 25",
 	"next_question" :[
 		{
-			"input" : "x = 3, y =2",
+			"input" : "x=3y=2",
 			"next_question" : "Q22",
 			"point" : "1"
 		}
@@ -234,7 +234,7 @@
 	"content" : "X^2 - 3y + 3x = 1",
 	"next_question" :[
 		{
-			"input": "x = 2, y = 3",
+			"input": "x=2y=3",
 			"next_question" : "Q23",
 			"point" : "1"
 		}
@@ -245,7 +245,7 @@
 	"content" : "X^2 + y^2 + z = 10 when z = 5",
 	"next_question" :[
 		{
-			"input" : "x = 1 , y = 2",
+			"input" : "x=1y=2",
 			"next_question" : "Q24",
 			"point" : "1"
 		}
@@ -256,7 +256,7 @@
 	"content" : "3x - 4y - 1= -6",
 	"next_question" :[
 	{
-		"input": "x = 3 ; y =4",
+		"input": "x=3y=4",
 		"next_question" : "Q25",
 		"point" : "1"
 		}
@@ -267,7 +267,7 @@
 	"content" :"3x^2 + x^3 - 9y = 31",
 	"next_question" :[
 		{
-			"input" : "x=4, y = 9",
+			"input" : "x=4y=9",
 			"next_question" : "end",
 			"point" : "1"
 		}

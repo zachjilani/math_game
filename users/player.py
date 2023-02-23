@@ -21,14 +21,11 @@ class Player:
     self.questions_asked.append(question)
 
   def questions(self, input):
+    input = ''.join(input.split())
     out = []
     for next_question in QUESTIONS[self.state]['next_question']:
-      print(f'before state change: {self.state}')
-      print(f'input: {input}')
       if input.lower() == next_question['input'].lower():
         self.state = next_question['next_question']
-        print(f'after state change: {self.state}')
-        print(f'input after: {input}')
         if 'point' in next_question['point']:
           self.score += next_question['point']
           out.append(self.score)
