@@ -4,6 +4,7 @@ QUESTIONS = {}
 with open('RevisedQuestions.json', 'r') as myfile:
   QUESTIONS = json.loads(myfile.read())
 
+state = 'start'
 
 class Player:
   def __init__(self, number, score=0):
@@ -16,7 +17,6 @@ class Player:
     self.questions_asked.append(question)
 
   def questions(self, input):
-    state = 'start'
     out = []
     for next_question in QUESTIONS[state]['next_question']:
       print(f'before state change: {state}')
