@@ -19,8 +19,12 @@ class Player:
     state = 'start'
     out = []
     for next_question in QUESTIONS[state]['next_question']:
+      print(f'before state change: {state}')
+      print(f'input: {input}')
       if input.lower() == next_question['input'].lower():
         state = next_question['next_question']
+        print(f'after state change: {state}')
+        print(f'input after: {input}')
         if 'point' in next_question['point']:
           self.score += next_question['point']
           out.append(self.score)
