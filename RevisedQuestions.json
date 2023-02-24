@@ -5,7 +5,7 @@
 		{
 			"input": "x=2",
 			"next_question": "Q2",
-			"point": 1
+			"point": "1"
 		}
 	]
 },
@@ -16,7 +16,7 @@
 		{
 			"input" : "x=6",
 			"next_question" : "Q3",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -27,7 +27,7 @@
 		{
 			"input" : "x=15",
 			"next_question" : "Q4",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -38,7 +38,7 @@
 		{
 			"input" : "x=15",
 			"next_question" : "Q5",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -49,7 +49,7 @@
 		{
 		"input" : "x=3",
 		"next_question" : "Q6",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -60,7 +60,7 @@
 		{
 			"input" : "x=4",
 			"next_question" : "Q7",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -71,7 +71,7 @@
 		{
 			"input" : "x=0",
 			"next_question" : "Q8",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -82,7 +82,7 @@
 		{
 			"input" : "x=3",
 			"next_question" : "Q9",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -93,7 +93,7 @@
 		{
 			"input" :"x=5",
 			"next_question" : "Q10",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -104,7 +104,7 @@
 		{
 			"input" : "x=1",
 			"next_question" : "Q11",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -115,7 +115,7 @@
 		{
 			"input" : "4x^2+7x",
 			"next_question" : "Q12",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -126,7 +126,7 @@
 		{
 			"input" : "5x+15y",
 			"next_question" : "Q13",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -137,7 +137,7 @@
 		{
 			"input" : "X^3+3x+4",
 			"next_question" : "Q14",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -148,7 +148,7 @@
 		{
 			"input" : "3x+2x",
 			"next_question" : "Q15",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -159,7 +159,7 @@
 		{
 			"input" : "X^2+3x^3",
 			"next_question" : "Q16",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -170,7 +170,7 @@
 		{
 			"input" : "X^2+5x+6",
 			"next_question" : "Q17",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -181,7 +181,7 @@
 		{
 			"input" : "y=1",
 			"next_question" : "Q18",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -192,7 +192,7 @@
 		{
 			"input": "y=3",
 			"next_question" : "Q19",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -203,7 +203,7 @@
 		{
 			"input" : "x=15y=2",
 			"next_question" : "Q20",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -214,7 +214,7 @@
 		{
 			"input" : "x=3y=4",
 			"next_question" : "Q21",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -225,7 +225,7 @@
 		{
 			"input" : "x=3y=2",
 			"next_question" : "Q22",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -236,7 +236,7 @@
 		{
 			"input": "x=2y=3",
 			"next_question" : "Q23",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -247,7 +247,7 @@
 		{
 			"input" : "x=1y=2",
 			"next_question" : "Q24",
-			"point" : 1
+			"point" : "1"
 		}
 	]
 },
@@ -258,7 +258,7 @@
 	{
 		"input": "x=3y=4",
 		"next_question" : "Q25",
-		"point" : 1
+		"point" : "1"
 		}
 	]
 },
@@ -269,7 +269,7 @@
 		{
 			"input" : "x=4y=9",
 			"next_question" : "end",
-			"point" : 1
+			"point" : "1"
 		}
   ]
 },
