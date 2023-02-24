@@ -18,13 +18,13 @@ class Player:
     for next_question in QUESTIONS[self.state]['next_question']:
       if input.lower() == next_question['input'].lower():
         self.state = next_question['next_question']
-        if 'point' in next_question:
+        if 'point' in next_question['point']:
           self.score += next_question['point']
           out.append(self.score)
           break
     while True:
       out.append(QUESTIONS[self.state]['content'])
-      if 'next_question' not in QUESTIONS[self.state]:
+      if 'next_state' not in QUESTIONS[self.state]:
         break
       self.state = QUESTIONS[self.state]['next_question']
 
