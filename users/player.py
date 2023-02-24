@@ -20,14 +20,13 @@ class Player:
         self.state = next_question['next_question']
         if 'point' in next_question:
           self.score += int(next_question['point'])
-          out.append(f'Score:{self.score}')
+          out.append(f'Score: {self.score}')
           print(out)
           break
     while True:
       out.append(QUESTIONS[self.state]['content'])
+      print(QUESTIONS[self.state])
       if 'next_state' not in QUESTIONS[self.state]:
-        print('in if statement')
-        print(out)
         break
       self.state = QUESTIONS[self.state]['next_question']
 
