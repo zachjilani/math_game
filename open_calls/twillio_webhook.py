@@ -22,7 +22,7 @@ def handle_request():
             player = pickle.load(p)
     else:
         player = Player(request.form['From'])
-
+    print(player.state)
     output = player.questions(request.form['Body'])
     for msg in output:
         message = g.sms_client.messages.create(
