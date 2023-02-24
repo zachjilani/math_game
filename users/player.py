@@ -19,8 +19,9 @@ class Player:
       if input.lower() == next_question['input'].lower():
         self.state = next_question['next_question']
         if 'point' in next_question['point']:
-          self.score += next_question['point']
+          self.score += int(next_question['point'])
           out.append(self.score)
+          print(out)
           break
     while True:
       out.append(QUESTIONS[self.state]['content'])
