@@ -20,7 +20,7 @@ class Player:
         self.state = next_question['next_question']
         if 'point' in next_question:
           self.score += next_question['point']
-          out.append(f'Score: {self.score}')
+          out.append(self.score)
           break
     while True:
       out.append(QUESTIONS[self.state]['content'])
