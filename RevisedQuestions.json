@@ -275,21 +275,6 @@
 },
 
 "end":{
-	"content" : "Thank you for playing! Do you want to restart? y/n",
-	"next_question" : [
-		{
-			"input" : "y",
-			"next_question" : "start",
-			"point": 0
-		},
-		{
-			"input": "n",
-			"next_question": "end_game"
-		}
-	]
-},
-
-"end_game":{
-	"content": "Good luck!"
-}
+	"content" : "Thank you for playing!"
+	}
 }
