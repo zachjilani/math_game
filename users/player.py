@@ -22,8 +22,6 @@ class Player:
           self.score += next_question['point']
           out.append(f'Score: {self.score}')
           break
-      else:
-        self.state = 'end'
     while True:
       out.append(QUESTIONS[self.state]['content'])
       if 'next_question' not in QUESTIONS[self.state]:
