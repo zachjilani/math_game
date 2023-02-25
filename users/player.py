@@ -23,11 +23,15 @@ class Player:
           out.append(f'Score: {self.score}')
           print(out)
           break
-    while True:
       out.append(QUESTIONS[self.state]['content'])
-      print(QUESTIONS[self.state])
-      if 'next_state' not in QUESTIONS[self.state]:
-        break
       self.state = QUESTIONS[self.state]['next_question']
 
     return out
+    # while True:
+    #   out.append(QUESTIONS[self.state]['content'])
+    #   print(QUESTIONS[self.state])
+    #   if 'next_state' not in QUESTIONS[self.state]:
+    #     break
+    #   self.state = QUESTIONS[self.state]['next_question']
+
+    # return out
