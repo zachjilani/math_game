@@ -25,6 +25,7 @@ class Player:
           break
         out.append(QUESTIONS[self.state]['content'])
         self.state = QUESTIONS[self.state]['next_question']
+        break
 
     return out
     # while True:
