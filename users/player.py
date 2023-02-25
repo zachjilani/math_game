@@ -13,6 +13,7 @@ class Player:
 
   def questions(self, input):
     input = ''.join(input.split())
+    print(input)
     out = []
     for next_question in QUESTIONS[self.state]['next_question']:
       if input.lower() == next_question['input'].lower():
@@ -23,6 +24,7 @@ class Player:
         break
     while True:
       out.append(QUESTIONS[self.state]['content'])
+      print(self.state)
       if 'next_question' not in QUESTIONS[self.state] or type(QUESTIONS[self.state]['next_question'] != str):
         break
       self.state = QUESTIONS[self.state]['next_question']
