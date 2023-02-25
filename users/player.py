@@ -21,9 +21,6 @@ class Player:
           self.score += int(next_question['point'])
           out.append(f'Score: {self.score}')
         break
-      if input.lower() != next_question['input'].lower():
-        self.state = 'end'
-        out.append(f'Final Score: {self.score}')
     while True:
       out.append(QUESTIONS[self.state]['content'])
       if 'next_question' not in QUESTIONS[self.state] or type(QUESTIONS[self.state]['next_question'] != str):
