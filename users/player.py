@@ -22,6 +22,8 @@ class Player:
           self.score += int(next_question['point'])
           out.append(f'Score: {self.score}')
         break
+      if input.lower() != next_question['input'].lower():
+        out.append("incorrect!")
     while True:
       out.append(QUESTIONS[self.state]['content'])
       print(self.state)
