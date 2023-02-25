@@ -24,6 +24,8 @@ class Player:
         break
       if input.lower() != next_question['input'].lower():
         out.append("incorrect!")
+        print(self.state)
+        self.state = 'end'
     while True:
       out.append(QUESTIONS[self.state]['content'])
       print(self.state)
