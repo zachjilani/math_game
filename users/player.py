@@ -26,6 +26,8 @@ class Player:
     while True:
       out.append(QUESTIONS[self.state]['content'])
       print(QUESTIONS[self.state])
+      if 'next_question' in QUESTIONS[self.state]:
+        print('theres another question')
       if 'next_state' not in QUESTIONS[self.state]:
         break
       self.state = QUESTIONS[self.state]['next_question']
