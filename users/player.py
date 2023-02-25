@@ -22,7 +22,7 @@ class Player:
           self.score += int(next_question['point'])
           out.append(f'Score: {self.score}')
           print(out)
-          break
+        break
     while True:
       out.append(QUESTIONS[self.state]['content'])
       print(QUESTIONS[self.state])
