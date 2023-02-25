@@ -36,7 +36,7 @@
 	"content" : "3x + 13 - 8 = 20",
 	"next_question" :[
 		{
-			"input" : "x=15",
+			"input" : "x=5",
 			"next_question" : "Q5",
 			"point" : "1"
 		}
