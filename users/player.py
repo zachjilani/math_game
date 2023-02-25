@@ -23,8 +23,8 @@ class Player:
           out.append(f'Score: {self.score}')
           print(out)
           break
-      out.append(QUESTIONS[self.state]['content'])
-      self.state = QUESTIONS[self.state]['next_question']
+        out.append(QUESTIONS[self.state]['content'])
+        self.state = QUESTIONS[self.state]['next_question']
 
     return out
     # while True:
