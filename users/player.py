@@ -13,18 +13,27 @@ class Player:
 
   def questions(self, input):
     input = ''.join(input.split())
-    print(input)
+    print(f'input before loop: {input} state before loop: {self.state}')
     out = []
     for next_question in QUESTIONS[self.state]['next_question']:
+      print(f'input after loop: {input} state after loop: {self.state}')
       if input.lower() == next_question['input'].lower():
+        print(f'in if, input matches.{input} state: {self.state}')
         self.state = next_question['next_question']
         if 'point' in next_question:
           self.score += int(next_question['point'])
           out.append(f'Score: {self.score}')
         break
-      if input.lower() != next_question['input'].lower():
-        out.append("Incorrect!")
-        print(self.state)
+      else:
+        print(f'input: {input} state: {self.state}')
+        self.score -= int(next_question['point'])
+        out.append(f'Incorrect! Score: {self.score}')
+        self.state = 'end'
+        print(f'input: {input} state: {self.state}')
+
+      # if input.lower() != next_question['input'].lower():
+      #   self.score -= int(next_question['point'])
+      #   out.append(f'Incorrect! Score: {self.score}')
     while True:
       out.append(QUESTIONS[self.state]['content'])
       print(self.state)
