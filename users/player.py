@@ -1,4 +1,5 @@
 import json
+import os
 
 QUESTIONS = {}
 with open('RevisedQuestions.json', 'r') as myfile:
@@ -25,11 +26,12 @@ class Player:
           out.append(f'Score: {self.score}')
         break
       if input.lower() != next_question['input'].lower() and input.lower() != 'start':
-        self.score -= int(next_question['point'])
-        out.append(f'Incorrect! Score: {self.score}')
+        out.append(f'Final score: {self.score}')
+        self.state = 'end'
+        if input.lower()[0] == 'y':
+          os.remove(f'users/{self.number}')
     while True:
       out.append(QUESTIONS[self.state]['content'])
-      print(self.state)
       if 'next_question' not in QUESTIONS[self.state] or type(QUESTIONS[self.state]['next_question'] != str):
         break
       self.state = QUESTIONS[self.state]['next_question']
