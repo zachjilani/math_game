@@ -29,6 +29,7 @@ class Player:
         out.append(f'Final score: {self.score}')
         self.state = 'end'
         if input.lower()[0] == 'y':
+          self.score = 0
           os.remove(f'users/{self.number}')
     while True:
       out.append(QUESTIONS[self.state]['content'])
