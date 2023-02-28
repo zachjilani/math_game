@@ -275,7 +275,7 @@
 },
 
 "end":{
-	"content" : "Thank you for playing! Would you like to restart? y/n",
+	"content" : "Thank you for playing! if you would like to restart, type y!",
 	"next_question" :[
 		{
 			"input": "y",
